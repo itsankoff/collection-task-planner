@@ -44,9 +44,9 @@ This project implements (1) and (2) in depth and (3) as a stub with a real state
 
 ## How it works
 
-```mermaid
-flowchart LR
-request submitted (API) --> access windows computed (orbit propagation) --> plan produced (CP-SAT solver) --> acquisitions scheduled (stub execution)
+```
+request submitted -> access windows computed -> plan produced -> acquisitions scheduled
+  (API)               (orbit propagation)       (CP-SAT solver)     (stub execution)
 ```
 
 1. A client `POST`s a **collection request**: a GeoJSON polygon, a time window, a priority.
